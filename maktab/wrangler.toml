@@ -1,6 +1,6 @@
 name = "maktab"
 main = "src/index.ts"
-compatibility_date = "2024-12-18"
+compatibility_date = "9f7fda8d-ba1b-4ea9-941d-07c82e2414f8"
 
 # دیتابیس D1
 [[d1_databases]]
