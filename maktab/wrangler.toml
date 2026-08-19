@@ -1,18 +1,18 @@
 name = "maktab"
 main = "src/index.ts"
-compatibility_date = "9f7fda8d-ba1b-4ea9-941d-07c82e2414f8"
+compatibility_date = "2026-08-19"
 
 # دیتابیس D1
 [[d1_databases]]
 binding = "DB"
 database_name = "maktab-db"
-database_id = "your-database-id"  # بعد از اجرای `npm run db:create` این را جایگزین کن
+database_id = "9f7fda8d-ba1b-4ea9-941d-07c82e2414f8"
 
 # ذخیره‌سازی فایل R2
 [[r2_buckets]]
 binding = "FILES"
 bucket_name = "maktab-files"
 
-# متغیرهای محیطی (برای پروداکشن با wrangler secret put ست کن، نه اینجا)
+# متغیرهای محیطی
 [vars]
 JWT_SECRET = "dev-only-change-this-in-production"
