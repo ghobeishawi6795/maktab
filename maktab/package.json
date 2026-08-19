@@ -1,0 +1,28 @@
+{
+  "name": "maktab",
+  "version": "1.0.0",
+  "description": "سیستم ارسال و مدیریت تکلیف برای معلمان ابتدایی",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "tsc --noEmit",
+    "db:create": "wrangler d1 create maktab-db",
+    "db:migrate": "wrangler d1 execute maktab-db --file=schema.sql",
+    "db:migrate:remote": "wrangler d1 execute maktab-db --remote --file=schema.sql",
+    "db:seed": "wrangler d1 execute maktab-db --file=seed-data.sql"
+  },
+  "dependencies": {
+    "itty-router": "^4.0.27",
+    "jose": "^5.9.6",
+    "bcryptjs": "^2.4.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/uuid": "^9.0.8",
+    "typescript": "^5.6.3",
+    "wrangler": "^3.90.0"
+  }
+}
